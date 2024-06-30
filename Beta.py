@@ -56,7 +56,7 @@ def gpt(chat):
     chat_log.append({"role": "assistant", "content": v})
 #read the news
 def news():
-    main_url = 'http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=0e9773028b6a4eb4a1678d8ffad2785b'
+    main_url = 'http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=    '
     main_page = requests.get(main_url).json()
     #print(main_page)
     articles = main_page["articles"]
@@ -73,8 +73,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('asadayuukisinemuamv7@gmail.com','0966360747nctcntth7v7')
-    server.sendmail('asadayuukisinemuamv7@gmail.com',to , content)
+    server.login('    ','    ')
+    server.sendmail('    ',to , content)
     server.close()
 #Change text to voice
 def speak(audio):
@@ -205,7 +205,7 @@ def task():
                 try:
                     speak("What should i write sir?")
                     content = command().lower()
-                    to = "23146007@student.hcmute.edu.vn"
+                    to = "    "
                     sendEmail(to, content)
                     speak("Email have been send successfully")
                 except Exception as Ex:
