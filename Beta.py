@@ -192,7 +192,7 @@ def task():
                     msg.attach(part)
                     server = smtplib.SMTP('smtp.gmail.com', 587)
                     server.starttls()
-                    server.login('asadayuukisinemuamv7@gmail.com','0966360747nctcntth7v7')
+                    server.login('    ','     ')
                     text = msg.as_string()
                     server.sendmail(email, send_to, text)
                     server.quit()
