@@ -29,10 +29,6 @@ import cv2
 import urllib.request
 import numpy as np
 import urllib3 as urllib
-import openai
-API_KEY = open("API_KEY", "r").read()
-openai.api_key = API_KEY
-chat_log = []
 engine = pyttsx3.init('sapi5')
 #getProperty get the voice from the library
 voices = engine.getProperty('voices')
@@ -43,17 +39,6 @@ i = 0
 engine.setProperty('voices',voices[i].id)
 #set the speed of the voice
 engine.setProperty('rate',180)
-#chat with gpt
-def gpt(chat):
-    chat_log.append({"role": "user", "content": chat})
-    response = openai.ChatCompletion.create(
-        model = "gpt-3.5-turbo",
-        messages = chat_log
-    )
-    assistant_response = response['choices'][0]['message']['content']
-    v = assistant_response.strip("\n").strip()
-    speak(f"{v}")
-    chat_log.append({"role": "assistant", "content": v})
 #read the news
 def news():
     main_url = 'http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=    '
