@@ -25,7 +25,7 @@ A personal voice assistant built with **Python**, capable of performing a wide r
 - Download Instagram profile picture
 - Infinite command loop unless told to stop
 
-## 🛠️ Installation
+## Installation
 
 ### Requirements
 
@@ -103,14 +103,8 @@ J.A.R.V.I.S/
   and allow **"less secure apps"** (or generate App Password for Gmail).
 * For News API, get your key at: [https://newsapi.org/](https://newsapi.org/)
 
-## 👨‍💻 Author
+## Author
 
 * **Nguyễn Châu Tấn Cường** – Cre: \[UTE HCMUTE]
 
 > This project was written for fun, learning, and demonstration of voice-controlled automation using Python.
-
-## 📜 License
-
-This project is open-source and free for educational or personal use. Commercial use is not permitted without permission.
-
-```
